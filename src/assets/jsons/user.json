@@ -1,0 +1,58 @@
+{
+   "_id": "651e626511b1b4e1e3c48074",
+   "firstName": "John",
+   "lastName": "Doe",
+   "address": {
+       "street": "12345 Washington Ave, Apt. 1000",
+       "street2": "Apt. 1000",
+       "city": "Los Angeles",
+       "state": "California",
+       "zip": "90010",
+       "full": "12345 Washington Ave, Apt. 1000, Los Angeles, California 90010"
+   },
+   "phone": "5621112222",
+   "emergencyContactName": "Jane Doe",
+   "emergencyContactPhone": "5623334444",
+   "preferredContactMethod": "phone",
+   "email": "john@doe.com",
+   "contactEmail": "john@doe.com",
+   "pet": [
+       {
+           "name": "Bory",
+           "age": 6,
+           "weight": 16,
+           "type": "Dog",
+           "birthday": "11/18/2017",
+           "breed": {
+               "_id": "63fc493493d90b851f80ac99",
+               "name": "Maltipoo"
+           },
+           "size": "sm",
+           "trimImg": "./src/assets/imgs/demo/bory.jpg"
+       },
+       {
+           "name": "Hodoo",
+           "age": 5,
+           "weight": 65,
+           "type": "Dog",
+           "birthday": "02/08/2019",
+           "breed": {
+               "_id": "63fbfe868de1a1614b66cb47",
+               "name": "Golden Retriever"
+           },
+           "size": "lg"
+       },
+       {
+           "name": "Kane",
+           "age": 5,
+           "weight": 27,
+           "type": "Dog",
+           "birthday": "11/18/2017",
+           "breed": {
+               "_id": "63fc49f293d90b851f80ac9c",
+               "name": "Shiba Inu"
+           },
+           "size": "md"
+       }
+   ]
+}

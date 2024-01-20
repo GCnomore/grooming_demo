@@ -1,0 +1,68 @@
+{
+    "address": {
+        "full": "123 road ave., Suite #12, City, CA, 90000",
+        "street": "123 road ave.",
+        "street2": "#12",
+        "city": "City",
+        "state": "CA",
+        "zip": "90000"
+    },
+    "hours": {
+        "mon": "11-18",
+        "tue": "11-18",
+        "wed": "11-18",
+        "fri": "11-18",
+        "sat": "11-18",
+        "sun": "Closed",
+        "thu": "11-18"
+    },
+    "petLimit": {
+        "all": false,
+        "limit": 60
+    },
+    "_id": "64af96baabd5cac6cfdca7f9",
+    "name": "Happy Grooming",
+    "email": "happy@grooming.com",
+    "phone": "562-123-1234",
+    "contactName": "Happy",
+    "holidays": [
+        "1/1",
+        "7/4",
+        "12/25"
+    ],
+    "website": "test.com",
+    "lat": "33.904960",
+    "lng": "-117.983868",
+    "extraServices": [
+        {
+            "name": "Essentials Plus",
+            "description": "Includes upgraded shampoo, conditioner, teeth-brushing, paw balm, PLUS nail buffing service",
+            "price": 24,
+            "isMult": false
+        },
+        {
+            "name": "Calm & Refresh",
+            "description": "Includes calming lavender shampoo, conditioner, spritz, and paw balm PLUS teeth-brushing and nail buffing service.",
+            "price": 26,
+            "isMult": true
+        },
+        {
+            "name": "Soothe & Repair",
+            "description": "Veterinarian-developed solution for dry, itchy skin.",
+            "price": 26,
+            "isMult": true
+        },
+        {
+            "name": "Flea Cleanse",
+            "description": "Includes naturally medicated or flea shampoo, moisturizing conditioner, teeth-brushing, paw balm, PLUS nail buffing service",
+            "price": 24,
+            "isMult": true
+        },
+        {
+            "name": "Shed Release",
+            "description": "Includes FURminator loose undercoat removal and shed-reducing shampoo and treatment, followed by another thorough brushout and hydrating aloe treatment",
+            "price": 20,
+            "isMult": false
+        }
+    ]
+}
