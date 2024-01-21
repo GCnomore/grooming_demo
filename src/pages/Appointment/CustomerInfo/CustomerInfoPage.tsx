@@ -154,15 +154,15 @@ const CustomerInfoPage: React.FC = () => {
 
 		if(type === 'emg') {
 			if(value !== emgPhonenumber) {
-				trigger('emergencyContactPhone');
 				setEmgPhoneNumber(value);
 				setValue('emergencyContactPhone', value.split('-').join(''));
+				trigger('emergencyContactPhone');
 			}
 		} else {
 			if(value !== phoneNumber) {
-				trigger('phone');
 				setPhoneNumber(value);
 				setValue('phone', value.split('-').join(''));
+				trigger('phone');
 			}
 		}
 	}
