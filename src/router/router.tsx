@@ -94,6 +94,6 @@ const router = createBrowserRouter([
       },
     ]
   },
-], { basename: '/grooming_demo/grooming/'});
+], { basename: '/grooming_demo/'});
 
 export default router;
