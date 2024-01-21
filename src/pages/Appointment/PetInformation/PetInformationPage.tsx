@@ -46,6 +46,7 @@ type PetForm = Yup.InferType<typeof formSchema>;
 type PetFromProps = keyof PetForm;
 
 const PetInformationPage: React.FC = () => {
+   const imageAssets = (fileName: string) => (import.meta.glob('/src/assets/imgs/demo/*.{jpg,jpeg,png,svg}', {eager: true})[`/src/assets/imgs/demo/${fileName}`] as any).default;
    const navigate = useNavigate();
    const dispatch = useDispatch<RootDispatch>();
 
@@ -71,7 +72,7 @@ const PetInformationPage: React.FC = () => {
    const leftSectionRef = useRef<HTMLElement>(null);
    
    const { register, watch, getValues, setValue, clearErrors, reset, trigger, formState: { errors } } = useForm({ mode: 'all', resolver: yupResolver(formSchema) });
-
+   
    useEffect(()=> {
       dispatch(setCurrentPetCount(count ? Number(count) : 1));
       dispatch(setBreeds(demo_breeds));
@@ -85,7 +86,7 @@ const PetInformationPage: React.FC = () => {
          setPetBreed([customer.pet[0].breed]);
          setValue('trimDesc', customer.pet[0].trimDesc);
          setSelectedServices(customer.pet[0].preferredServices ?? []);
-         setTrimImg(customer.pet[0].trimImg)
+         setTrimImg(imageAssets('bory.jpg'));
       }
    }, []);
 
@@ -111,7 +112,7 @@ const PetInformationPage: React.FC = () => {
             setValue('weight', user.pet[0].weight);
             setValue('breed', user.pet[0].breed);
             setPetBreed([user.pet[0].breed]);
-            setTrimImg(user.pet[0].trimImg);
+            setTrimImg(imageAssets('bory.jpg'));
          }
       }
 
