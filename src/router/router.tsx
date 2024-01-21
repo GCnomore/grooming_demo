@@ -8,6 +8,7 @@ const CustomerInfoPage = lazy(() => import("../pages/Appointment/CustomerInfo/Cu
 const PetInformationPage = lazy(() => import("../pages/Appointment/PetInformation/PetInformationPage"));
 const DonePage = lazy(() => import("../pages/Appointment/Done/DonePage"));
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -93,6 +94,6 @@ const router = createBrowserRouter([
       },
     ]
   },
-], { basename: '/grooming'});
+], { basename: '/grooming_demo/grooming/'});
 
 export default router;
