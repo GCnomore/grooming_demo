@@ -1,6 +1,7 @@
 import React from "react";
 
 import * as Styled from "./SubmitButton.styled";
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 
 interface ISubmitButton {
@@ -12,6 +13,8 @@ interface ISubmitButton {
 
 const SubmitButton: React.FC<ISubmitButton> = ({ disabled, btnAction, buttonText = 'Next' }) => {
   const handleOnClick = (e:React.MouseEvent) => {
+    const analytics = getAnalytics();
+    logEvent(analytics, 'submit_btn');
     btnAction && btnAction(e)
 
     setTimeout(()=> {
