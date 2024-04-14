@@ -20,7 +20,7 @@ function App() {
 
    useEffect(()=> {    
       const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
+      getAnalytics(app);
       
       getStoreInfo();
       dispatch(setUser(demo_user));
